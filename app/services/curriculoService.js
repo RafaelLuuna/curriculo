@@ -68,7 +68,7 @@ Tive a oportunidade de trabalhar com diversas linguagens, frameworks e tecnologi
             },
             {
                 title: 'Projetos pessoais.',
-                description: 'Projetos feitos por simple paixão à programação, são projetos não oficiais mas que desenvolveram minhas habilidades técnicas.',
+                description: 'Projetos feitos por simples paixão à programação, são projetos não oficiais mas que desenvolveram minhas habilidades técnicas.',
                 details: [
                     {
                         title: 'Sistema MVC em php feito do zero:',

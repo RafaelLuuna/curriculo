@@ -8,7 +8,7 @@ function config(
             url: '/curriculo/simples',
             data: {},
             templateUrl: 'app/curriculo/curriculo-simples.html',
-        })
+        });
 }
 angular.module('AppCurriculo')
     .config(config)
