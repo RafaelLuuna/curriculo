@@ -1,0 +1,66 @@
+<div ng-controller="curriculoSimplesController">
+    <div class="d-flex justify-content-center bg-secondary">
+        <div class="col-auto pt-3">
+            <p class="text-white">
+                Esta é a versão simplificada do meu currículo, 
+                <span>
+                    <a class="btn btn-light py-0" href="#/curriculo/interativo">
+                        Clique aqui para ver o currícudo interarivo
+                    </a>
+                </span>
+            </p>
+        </div>
+
+    </div>
+
+    <div class="card m-3 p-4" id="main-card">
+        <div class="row d-flex justify-content-between">
+            <div class="col-auto">
+                <h2> {{ dadosGerais.nome }} </h2>
+                <h5> {{ dadosGerais.cargoAtual }} </h5>
+            </div>
+            <div class="col-auto text-end">
+                <p>
+                    {{ dadosGerais.endereco }} <br>
+                    {{ dadosGerais.email }} <br>
+                    {{ dadosGerais.telefone }}
+                </p>
+            </div>
+
+        </div>
+
+        <hr>
+
+        <h4>Conhecimentos técnicos</h4>
+        <div class="card pt-3">
+            <ul>
+                <li ng-repeat="conhecimento in conhecimentos"><b>{{ conhecimento.title }}:</b> {{ conhecimento.content }}.</li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <h4>Experiências</h4>
+        <div class="card pt-3">
+            <ul>
+                <li ng-repeat="experiencia in experiencias">
+                    <h6> {{ experiencia.title }} </h6>
+                    <p> {{ experiencia.description }} </p>
+                    <hr>
+                    <div ng-repeat="detalhe in experiencia.details" >
+                        <h6 class="bg-gray" data-bs-toggle="collapse" href="#list{{$parent.$index}}-{{$index}}" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            {{ detalhe.title }}
+                        </h6>
+                        <div class="collapse" id="list{{$parent.$index}}-{{$index}}">
+                            <div ng-include="detalhe.contentUrl"></div>
+                        </div>
+                        <hr>
+                    </div>
+                </li>
+                
+            </ul>
+        </div>
+
+    </div>
+    
+</div>
