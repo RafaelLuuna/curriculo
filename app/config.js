@@ -2,7 +2,7 @@ function config(
     $stateProvider,
     $urlRouterProvider
 ){
-    $urlRouterProvider.otherwise('/');
+    $urlRouterProvider.otherwise('/curriculo/simples');
     $stateProvider
         .state('curriculoSimples',{
             url: '/curriculo/simples',
@@ -12,5 +12,5 @@ function config(
 }
 angular.module('AppCurriculo')
     .config(config)
-    .run(function($location){
+    .run(function(){
     });
