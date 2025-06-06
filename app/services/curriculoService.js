@@ -87,41 +87,7 @@ Tive a oportunidade de trabalhar com diversas linguagens, frameworks e tecnologi
                         contentUrl: 'app/curriculo/experiencias/PESSOAL_BotBlaze.html'
                     }
                 ]
-            },
-            {
-                id: 3,
-                title: 'Teste.',
-                description: 'Este é um card de teste.',
-                details: [
-                    {
-                        id: 0,
-                        title: 'Sistema MVC em php feito do zero:',
-                        contentUrl: 'app/curriculo/experiencias/PESSOAL_MVCPHP.html'
-                    },
-                    {
-                        id: 1,
-                        title: 'Bot automatizado para jogo de apostas:',
-                        contentUrl: 'app/curriculo/experiencias/PESSOAL_BotBlaze.html'
-                    }
-                ]
-            },
-            {
-                id: 4,
-                title: 'Teste2.',
-                description: 'Este é outro card de teste.',
-                details: [
-                    {
-                        id: 0,
-                        title: 'Sistema MVC em php feito do zero:',
-                        contentUrl: 'app/curriculo/experiencias/PESSOAL_MVCPHP.html'
-                    },
-                    {
-                        id: 1,
-                        title: 'Bot automatizado para jogo de apostas:',
-                        contentUrl: 'app/curriculo/experiencias/PESSOAL_BotBlaze.html'
-                    }
-                ]
-            },
+            }
         ];
     }
 
