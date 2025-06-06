@@ -8,6 +8,11 @@ function config(
             url: '/curriculo/simples',
             data: {},
             templateUrl: 'app/curriculo/curriculo-simples.html',
+        })
+        .state('test',{
+            url: '/test',
+            data: {},
+            templateUrl: 'app/test/test.html',
         });
 }
 angular.module('AppCurriculo')

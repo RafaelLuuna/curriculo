@@ -1,8 +1,8 @@
-<!-- Carrossel | small -->
-<div id="carousel-small" class="carousel slide">
+<!-- Carrossel | medium -->
+<div id="carousel-medium-{{ carousel.id }}" class="carousel slide">
     <div class="carousel-inner">
 
-        <div class="carousel-item {{ $index == 0 ? 'active' : ''}}" ng-repeat="page in experiencias.pages.small">
+        <div class="carousel-item {{ $index == 0 ? 'active' : ''}}" ng-repeat="page in carousel.pages.medium">
 
             <div class="d-flex flex-row gap-2">
                 <!-- Card da experiência -->

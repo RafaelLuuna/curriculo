@@ -6,7 +6,7 @@
     <div ng-repeat="detalhe in experiencia.details">
         <hr>
         <div>
-            <h6 data-bs-toggle="collapse" href="#list{{experiencia.id}}-{{detalhe.id}}" role="button" aria-expanded="false">
+            <h6 class="accordion-button" data-bs-toggle="collapse" href="#list{{experiencia.id}}-{{detalhe.id}}" role="button" aria-expanded="false">
             {{ detalhe.title }}
             </h6>
             <div class="collapse" id="list{{experiencia.id}}-{{detalhe.id}}">

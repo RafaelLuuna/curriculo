@@ -1,0 +1,37 @@
+
+<div class="d-flex flex-row justify-content-between">
+    
+    <div class="mx-2 d-flex align-items-center">
+            <button ng-hide="carousel.pages.small.length <= 1" class="btn-carousel op-hover-50 d-block d-md-none" type="button" data-bs-target="#carousel-small-{{ carousel.id }}" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button ng-hide="carousel.pages.medium.length <= 1" class="btn-carousel op-hover-50 d-none d-md-block d-xl-none" type="button" data-bs-target="#carousel-medium-{{ carousel.id }}" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button ng-hide="carousel.pages.large.length <= 1" class="btn-carousel op-hover-50 d-none d-xl-block" type="button" data-bs-target="#carousel-large-{{ carousel.id }}" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+    </div>
+
+    <div class="flex-grow-1">
+        <div ng-include="'app/curriculo/experiencias/templates/carousel/content/carousel_small.html'" class="d-block d-md-none"></div>
+        <div ng-include="'app/curriculo/experiencias/templates/carousel/content/carousel_medium.html'" class="d-none d-md-block d-xl-none"></div>
+        <div ng-include="'app/curriculo/experiencias/templates/carousel/content/carousel_large.html'" class="d-none d-xl-block"></div>
+    </div>
+            
+
+
+
+    <div class="mx-2 d-flex align-items-center">
+        <button ng-hide="carousel.pages.small.length <= 1" class="btn-carousel op-hover-50 d-block d-md-none" type="button" data-bs-target="#carousel-small-{{ carousel.id }}" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+        <button ng-hide="carousel.pages.medium.length <= 1" class="btn-carousel op-hover-50 d-none d-md-block d-xl-none" type="button" data-bs-target="#carousel-medium-{{ carousel.id }}" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+        <button ng-hide="carousel.pages.large.length <= 1" class="btn-carousel op-hover-50 d-none d-xl-block" type="button" data-bs-target="#carousel-large-{{ carousel.id }}" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+    
+</div>

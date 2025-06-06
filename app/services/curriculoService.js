@@ -22,7 +22,7 @@ angular.module('AppCurriculo').service('curriculoService',function(){
         return [
             {
                 title: 'Frameworks',
-                content: '.NET, Angular, AngularJS, Django, Flask'
+                content: '.NET, Angular, AngularJS, Django, Flask, bootstrap'
             },
             {
                 title: 'Linguagens',
@@ -40,55 +40,73 @@ angular.module('AppCurriculo').service('curriculoService',function(){
     }
 
     function experiencias (){
-        return [
-            {
-                id: 0,
-                title: 'Product Owner | EAÍ?! Content Experience | 2021 - atual',
-                description: 'Como product Owner, tenho a oportunidade de acompanhar todo o processo de desenvolvimento na prática. Desde o planejamento até ao deploy em produção.',
-                details: [
-                    {
-                        id: 0,
-                        title: 'Experiências neste cargo:',
-                        contentUrl: 'app/curriculo/experiencias/EAI_experiencias.html'
-                    }
-                ]
-            },
-            {
-                id: 1,
-                title: 'Faculdade de Análise e Desenvolvimento de Sistemas | uniFECAF | 2024 - 2026',
-                description: `Neste curso desenvolvi minha parte técnica, através dos materiais da própria grade curricular e de experiências com outros alunos e professores.
-Tive a oportunidade de trabalhar com diversas linguagens, frameworks e tecnologias.`,
-                details: [
-                    {
-                        id: 0,
-                        title: 'Projetos e atividades realizados no curso:',
-                        contentUrl: 'app/curriculo/experiencias/FECAF_projetos.html'
-                    },
-                    {
-                        id: 1,
-                        title: 'Algumas das certificações adquiridas neste curso envolvem:',
-                        contentUrl: 'app/curriculo/experiencias/FECAF_certificados.html'
-                    }
-                ]
-            },
-            {
-                id: 2,
-                title: 'Projetos pessoais.',
-                description: 'Projetos feitos por simples paixão à programação, são projetos não oficiais mas que desenvolveram minhas habilidades técnicas.',
-                details: [
-                    {
-                        id: 0,
-                        title: 'Sistema MVC em php feito do zero:',
-                        contentUrl: 'app/curriculo/experiencias/PESSOAL_MVCPHP.html'
-                    },
-                    {
-                        id: 1,
-                        title: 'Bot automatizado para jogo de apostas:',
-                        contentUrl: 'app/curriculo/experiencias/PESSOAL_BotBlaze.html'
-                    }
-                ]
-            }
-        ];
+        return {
+            profissional: [
+                {
+                    id: 0,
+                    title: 'Product Owner | EAÍ?! Content Experience | 2021 - atual',
+                    description: 'Como product Owner, tenho a oportunidade de acompanhar todo o processo de desenvolvimento na prática. Desde o planejamento até ao deploy em produção.',
+                    details: [
+                        {
+                            id: 0,
+                            title: 'Experiências neste cargo:',
+                            contentUrl: 'app/curriculo/experiencias/EAI_experiencias.html'
+                        }
+                    ]
+                },
+            ],
+            
+            academico: [
+                {
+                    id: 0,
+                    title: 'Faculdade de Análise e Desenvolvimento de Sistemas | uniFECAF | 2024 - 2026',
+                    description: `Neste curso desenvolvi minha parte técnica, através dos materiais da própria grade curricular e de experiências com outros alunos e professores.
+    Tive a oportunidade de trabalhar com diversas linguagens, frameworks e tecnologias.`,
+                    details: [
+                        {
+                            id: 0,
+                            title: 'Projetos e atividades realizados no curso:',
+                            contentUrl: 'app/curriculo/experiencias/FECAF_projetos.html'
+                        },
+                        {
+                            id: 1,
+                            title: 'Algumas das certificações adquiridas neste curso envolvem:',
+                            contentUrl: 'app/curriculo/experiencias/FECAF_certificados.html'
+                        }
+                    ]
+                },
+                
+            ],
+            
+            pessoal: [
+                {
+                    id: 0,
+                    title: 'Sistema MVC em php feito do zero.',
+                    description: 'Projetos feitos por simples paixão à programação, são projetos não oficiais mas que desenvolveram minhas habilidades técnicas.',
+                    details: [
+                        {
+                            id: 0,
+                            title: 'Mais informações sobre o projeto',
+                            contentUrl: 'app/curriculo/experiencias/PESSOAL_MVCPHP.html'
+                        }
+                    ]
+                },
+                {
+                    id: 1,
+                    title: 'Bot automatizado para jogos online.',
+                    description: 'Projetos feitos por simples paixão à programação, são projetos não oficiais mas que desenvolveram minhas habilidades técnicas.',
+                    details: [
+                        {
+                            id: 0,
+                            title: 'Mais informações sobre o projeto',
+                            contentUrl: 'app/curriculo/experiencias/PESSOAL_BotBlaze.html'
+                        }
+                    ]
+                }
+                
+            ]
+            
+        };
     }
 
     function certificados (){
