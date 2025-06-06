@@ -10,9 +10,6 @@ angular.module('AppCurriculo').controller('curriculoSimplesController', function
             small: utils.array.chunk(experiencias,1),
             medium: utils.array.chunk(experiencias,2),
             large: utils.array.chunk(experiencias,3)
-        },
-        templates: {
-            small: 'app/curriculo/experiencia/carousel/carousel_small.html'
         }
     }
 
