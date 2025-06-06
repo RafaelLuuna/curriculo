@@ -81,8 +81,8 @@ angular.module('AppCurriculo').service('curriculoService',function(){
             pessoal: [
                 {
                     id: 0,
-                    title: 'Sistema MVC em php feito do zero.',
-                    description: 'Projetos feitos por simples paixão à programação, são projetos não oficiais mas que desenvolveram minhas habilidades técnicas.',
+                    title: 'Sistema MVC em php feito do zero',
+                    description: 'Meu primeiro desenvolvimento web onde escrevi um framework MVC do absoluto zero utilizando PHP.',
                     details: [
                         {
                             id: 0,
@@ -93,8 +93,8 @@ angular.module('AppCurriculo').service('curriculoService',function(){
                 },
                 {
                     id: 1,
-                    title: 'Bot automatizado para jogos online.',
-                    description: 'Projetos feitos por simples paixão à programação, são projetos não oficiais mas que desenvolveram minhas habilidades técnicas.',
+                    title: 'Bot automatizado para jogos online',
+                    description: 'Bot desenvolvido em python para automatizar a rotina de um jogo online. Ele utiliza de técnicas básicas de machine learning utilizando bibliotecas como Keras e Numpy',
                     details: [
                         {
                             id: 0,
