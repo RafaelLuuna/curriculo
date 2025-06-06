@@ -1,10 +1,10 @@
 <div>     
     <div ng-repeat="certificado in certificados.fecaf">
-        <div class="container d-flex align-items-center justify-content-between flex-column flex-md-row">
-            <p class="p-1 my-1 col-12 col-md-3 text-center text-md-end">
+        <div class="container d-flex align-items-center justify-content-between flex-column">
+            <p class="p-1 my-1 col-12 text-center">
                 {{ certificado.name }}
             </p>
-            <div class="progress col-12 col-md-9" role="progressbar" aria-label="Basic example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress col-12" role="progressbar" aria-label="Basic example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
                 <div class="progress-bar" style="width: {{ certificado.progress }}%">{{ certificado.progress }} %</div>
             </div>
         </div>
