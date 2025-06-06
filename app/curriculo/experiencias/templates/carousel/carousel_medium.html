@@ -1,0 +1,21 @@
+<!-- Carrossel | medium -->
+<div id="carousel-medium" class="carousel slide">
+    <div class="carousel-inner">
+
+        <div class="carousel-item {{ $index == 0 ? 'active' : ''}}" ng-repeat="page in experiencias.pages.medium">
+
+            <div class="d-flex flex-row gap-2">
+                <!-- Card da experiência -->
+                <div ng-repeat="experiencia in page" class="col">
+
+                    <div ng-include="'app/curriculo/experiencias/templates/card_experiencia.html'" ></div>
+
+                </div>
+
+            </div>    
+
+        </div>
+
+    </div>
+
+</div>

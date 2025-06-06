@@ -1,0 +1,17 @@
+<div class="card py-3 px-2">
+    <div class="ps-3">
+        <h5> {{ experiencia.title }} </h5>
+        <p> {{ experiencia.description }} </p>
+    </div>
+    <div ng-repeat="detalhe in experiencia.details" data-bs-toggle="collapse" href="#list{{experiencia.id}}-{{detalhe.id}}" role="button" aria-expanded="false">
+        <hr>
+        <div class="ps-5">
+            <h6>
+            {{ detalhe.title }}
+            </h6>
+            <div class="collapse" id="list{{experiencia.id}}-{{detalhe.id}}">
+                <div ng-include="detalhe.contentUrl"></div>
+            </div>
+        </div>
+    </div>
+</div>

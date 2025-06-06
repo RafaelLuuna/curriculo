@@ -1,25 +1,21 @@
-<div ng-controller="curriculoSimplesController">
-    <div class="d-flex justify-content-center bg-secondary">
-        <div class="col-auto pt-3">
-            <p class="text-white">
-                <span>
-                    <a class="btn btn-light py-0" href="https://github.com/RafaelLuuna/curriculo" target="_blank">
-                        Clique aqui para ver o código fonte deste currículo.
-                    </a>
-                </span>
-            </p>
-        </div>
+<div class="info-bar">
+    <a class="btn btn-dark py-0" href="https://github.com/RafaelLuuna/curriculo" target="_blank">
+        Clique aqui para ver o código fonte deste currículo.
+    </a>
+</div>
 
-    </div>
 
-    <div class="card m-3 p-4" id="main-card">
-        <div class="row d-flex justify-content-between">
+<div class="container pt-3 pb-5 d-flex flex-column row-gap-4" ng-controller="curriculoSimplesController">
+
+    <div class="card p-4" id="main-card">
+        <div class="row d-flex justify-content-between align-items-start flex-column flex-xl-row align-items-xl-end">
             <div class="col-auto">
-                <h2> {{ dadosGerais.nome }} </h2>
-                <h5> {{ dadosGerais.cargoAtual }} </h5>
+                <h2 class="display-1"> {{ dadosGerais.nome }} </h2>
+                <h2> {{ dadosGerais.cargoAtual }} </h5>
+                <hr class="d-block d-xl-none">
             </div>
-            <div class="col-auto text-end">
-                <p>
+            <div class="col-auto text-start text-xl-end">
+                <p class="mb-0">
                     {{ dadosGerais.endereco }} <br>
                     {{ dadosGerais.email }} <br>
                     {{ dadosGerais.telefone }}
@@ -27,39 +23,55 @@
             </div>
 
         </div>
+        
+    </div>
 
-        <hr>
-
+    <div>
         <h4>Conhecimentos técnicos</h4>
         <div class="card pt-3">
             <ul>
                 <li ng-repeat="conhecimento in conhecimentos"><b>{{ conhecimento.title }}:</b> {{ conhecimento.content }}.</li>
             </ul>
         </div>
-
-        <hr>
-
-        <h4>Experiências</h4>
-        <div class="card pt-3">
-            <ul>
-                <li ng-repeat="experiencia in experiencias">
-                    <h6> {{ experiencia.title }} </h6>
-                    <p> {{ experiencia.description }} </p>
-                    <hr>
-                    <div ng-repeat="detalhe in experiencia.details" >
-                        <h6 class="bg-gray" data-bs-toggle="collapse" href="#list{{$parent.$index}}-{{$index}}" role="button" aria-expanded="false" aria-controls="collapseExample">
-                            {{ detalhe.title }}
-                        </h6>
-                        <div class="collapse" id="list{{$parent.$index}}-{{$index}}">
-                            <div ng-include="detalhe.contentUrl"></div>
-                        </div>
-                        <hr>
-                    </div>
-                </li>
-                
-            </ul>
-        </div>
-
     </div>
-    
+
+    <div>
+        <h4>Experiências</h4>
+
+        <div class="d-flex flex-row justify-content-between">
+            
+            <div class="mx-2 d-flex align-items-center">
+                    <button class="btn-carousel d-block d-md-none" type="button" data-bs-target="#carousel-small" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="btn-carousel d-none d-md-block d-xl-none" type="button" data-bs-target="#carousel-medium" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="btn-carousel d-none d-xl-block" type="button" data-bs-target="#carousel-large" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+            </div>
+
+            <div class="flex-grow-1">
+                <div ng-include="'app/curriculo/experiencias/templates/carousel/carousel_small.html'" class="d-block d-md-none"></div>
+                <div ng-include="'app/curriculo/experiencias/templates/carousel/carousel_medium.html'" class="d-none d-md-block d-xl-none"></div>
+                <div ng-include="'app/curriculo/experiencias/templates/carousel/carousel_large.html'" class="d-none d-xl-block"></div>
+            </div>
+                    
+
+
+
+            <div class="mx-2 d-flex align-items-center">
+                <button class="btn-carousel d-block d-md-none" type="button" data-bs-target="#carousel-small" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <button class="btn-carousel d-none d-md-block d-xl-none" type="button" data-bs-target="#carousel-medium" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <button class="btn-carousel d-none d-xl-block" type="button" data-bs-target="#carousel-large" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
+    </div>
 </div>

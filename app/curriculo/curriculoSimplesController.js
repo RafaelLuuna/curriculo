@@ -1,7 +1,19 @@
-angular.module('AppCurriculo').controller('curriculoSimplesController', function($scope, $rootScope, curriculoService){
+angular.module('AppCurriculo').controller('curriculoSimplesController', function($scope, $rootScope, curriculoService, utils){
     $scope.dadosGerais = curriculoService.dadosGerais();
     $scope.conhecimentos = curriculoService.conhecimentos();
-    $scope.experiencias = curriculoService.experiencias();
     $scope.certificados = curriculoService.certificados();
-    $scope.elementIndex = 0;
+    
+    experiencias = curriculoService.experiencias();
+    
+    $scope.experiencias = {
+        pages: {
+            small: utils.array.chunk(experiencias,1),
+            medium: utils.array.chunk(experiencias,2),
+            large: utils.array.chunk(experiencias,3)
+        },
+        templates: {
+            small: 'app/curriculo/experiencia/carousel/carousel_small.html'
+        }
+    }
+
 });
