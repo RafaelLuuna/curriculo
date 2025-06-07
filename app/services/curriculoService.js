@@ -14,7 +14,8 @@ angular.module('AppCurriculo').service('curriculoService',function(){
             cargoAtual: 'Product Owner | EAÍ?! Content Experience',
             endereco: 'Taboão da Serra - SP',
             email: 'rafael_luna_2025@outlook.com.br',
-            telefone: '(11) 94894-4004'
+            telefone: '(11) 94894-4004',
+            github: 'https://github.com/rafaelluuna'
         };
     }
 
@@ -60,8 +61,7 @@ angular.module('AppCurriculo').service('curriculoService',function(){
                 {
                     id: 0,
                     title: 'Faculdade de Análise e Desenvolvimento de Sistemas | uniFECAF | 2024 - 2026',
-                    description: `Neste curso desenvolvi minha parte técnica, através dos materiais da própria grade curricular e de experiências com outros alunos e professores.
-    Tive a oportunidade de trabalhar com diversas linguagens, frameworks e tecnologias.`,
+                    description: `Através dos materias da grade curricular e das experiências com outros alunos e professores, pude desenvolver minha habilidade técnica e trabalhar com as mais diversas tecnologias.`,
                     details: [
                         {
                             id: 0,
