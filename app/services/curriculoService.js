@@ -59,7 +59,7 @@ angular.module('AppCurriculo').service('curriculoService',function(){
             
             academico: [
                 {
-                    id: 0,
+                    id: 1,
                     title: 'Faculdade de Análise e Desenvolvimento de Sistemas | uniFECAF | 2024 - 2026',
                     description: `Através dos materias da grade curricular e das experiências com outros alunos e professores, pude desenvolver minha habilidade técnica e trabalhar com as mais diversas tecnologias.`,
                     details: [
@@ -80,7 +80,7 @@ angular.module('AppCurriculo').service('curriculoService',function(){
             
             pessoal: [
                 {
-                    id: 0,
+                    id: 2,
                     title: 'Sistema MVC em php feito do zero',
                     description: 'Meu primeiro desenvolvimento web onde escrevi um framework MVC do absoluto zero utilizando PHP.',
                     details: [
@@ -92,7 +92,7 @@ angular.module('AppCurriculo').service('curriculoService',function(){
                     ]
                 },
                 {
-                    id: 1,
+                    id: 3,
                     title: 'Bot automatizado para jogos online',
                     description: 'Bot desenvolvido em python para automatizar a rotina de um jogo online. Ele utiliza de técnicas básicas de machine learning utilizando bibliotecas como Keras e Numpy',
                     details: [
